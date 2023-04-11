@@ -1,0 +1,145 @@
+:root {
+  --yankees-blue: #1C2541;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: var(--yankees-blue);
+}
+
+.app {
+  display: flex;
+  background: var(--yankees-blue);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 60vh;
+  align-items: flex-start;
+}
+.wrapper .side-panel {
+  background: rgb(5, 68, 104);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+
+.wrapper .side-panel .profile{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.wrapper .side-panel .profile img{
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.wrapper .side-panel .profile h3{
+  color: #ffffff;
+  margin: 10px 0 5px;
+}
+
+
+.wrapper .side-panel .profile p{
+  color: rgb(206, 240, 253);
+  font-size: 14px;
+}
+
+.wrapper .side-panel ul li {
+  display: block;
+  padding: 13px 30px;
+  border-bottom: 1px solid #10558d;
+  color: rgb(241, 237, 237);
+  font-size: 16px;
+  position: relative;
+}
+
+.wrapper .side-panel ul li :hover,
+.wrapper .side-panel ul li .active{
+    color: #0c7db1;
+
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+
+.wrapper .side-panel ul li :hover:before,
+.wrapper .side-panel ul li .active:before{
+    display: block;
+}
+
+.analysis {
+  color: white;
+  background-color: rgb(5, 68, 104);
+  text-align: left;
+  width: 20%;
+  padding-left: 5px;
+  padding-bottom: 117px;
+  position: absolute;
+  top: 40px;
+  left: 74%; 
+}
+
+h3{
+  text-align: center;
+}
+
+.av-rating {
+  color: white;
+  background-color: rgb(5, 68, 104);
+  text-align: left;
+  width: 20%;
+  padding-left: 5px;
+  padding-bottom: 117px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+}
+
+.reviews{
+  color: white;
+  background-color: rgb(5, 68, 104);
+  text-align: left;
+  width: 20%;
+  padding-left: 5px;
+  padding-bottom: 117px;
+  position: absolute;
+  top: 40px;
+  left: 27%;
+}
+
+.website-visitors {
+  color: white;
+  background-color: rgb(5, 68, 104);
+  text-align: left;
+  width: 68%;
+  height: 44vh;
+  padding-left: 5px;
+  padding-bottom: 117px;
+  position: absolute;
+  top: 250px;
+  left: 27%;
+}
+
+.website-visitors .graph {
+  color: black;
+  background-color: lightgray;
+  text-align: center;
+  box-sizing: border-box;
+  width: 90%;
+  height: 80%;
+  margin: 4%;
+}
